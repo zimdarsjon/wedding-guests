@@ -4,9 +4,10 @@
   "description": "Application to keep track of who is attending a wedding along with the number of guests",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "dev": "webpack serve --open"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "etl": "node ./server/db/loader.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,10 @@
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "next": "^13.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "style-loader": "^3.3.3",
