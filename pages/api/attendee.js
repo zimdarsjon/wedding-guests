@@ -10,8 +10,17 @@ export default async function handler(req, res) {
         //res.json(myPost.ops[0]);
         break;
     case "GET":
-        const allPosts = await db.collection("attendees").find({}).toArray();
-        res.json({ status: 200, data: allPosts });
+        if (req.query.all) {
+            const allAttendees = await db.collection("attendees").find({}).toArray();
+            res.json({ status: 200, data: allAttendees });
+        } else {
+            const name = req.query.name;
+            const regex = new RegExp(name, 'i');
+            const attendees = await db.collection("attendees").find({
+                name: {$regex: regex}
+            }).toArray();
+            res.json({ status: 200, data: attendees });
+        }
         break;
     case "PUT":
         // Update Attendee

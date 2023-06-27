@@ -1,0 +1,39 @@
+.formContainer{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 92%;
+    height: 90vh;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 5vh;
+    background-position: center;
+}
+
+.searchName{
+    width: 25%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formPage{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1{
+    font-size: 6rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
