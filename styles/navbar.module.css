@@ -20,6 +20,14 @@
     margin-right: 4%;
 }
 
+.mobileRSVP{
+    border: none;
+    font-size: 1.5rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    width: 50%;
+    align-self: center;
+}
+
 .title{
     font-size: 2.2rem;
     position: absolute;
@@ -27,6 +35,15 @@
     transform: translatex(-50%);
     font-weight: 400;
 }
+
+.dropButton{
+    display: none;
+}
+
+.mobileNav{
+    display: none;
+}
+
 
 @media only screen and (max-device-width: 480px) {
     .navbarButtonContainer {
@@ -40,5 +57,30 @@
         left: 5%;
         transform: none;
         font-size: 1.8rem;
+    }
+    .dropButton{
+        display: inline-block;
+        margin-right: 4%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .mobileNav{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height:90vh;
+        justify-content:space-evenly;
+        background-color: white;
+    }
+    .mobileNav div button{
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        font-size: 2.5rem;
+    }
+    .mobileButtonBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
   }

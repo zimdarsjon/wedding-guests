@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.jsx';
 export default function Travel() {
   return (
     <div className='gray-page'>
-      <Navbar color='white' page='/travel'/>
+      <Navbar color='black' page='/travel'/>
       <h1>Insert Information HERE</h1>
     </div>
   )
