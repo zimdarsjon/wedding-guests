@@ -1,0 +1,57 @@
+.quotes div {
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quotes div:nth-child(2){
+    margin-left: 25%;
+    width: 60%;
+}
+
+.quotes div p:first-child{
+    font-size: 4rem;
+}
+
+.quotes div p:nth-child(2){
+    font-size: 1.5rem;
+}
+
+.storyBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.storyBox div {
+    width: 40%;
+}
+
+.storyImage{
+    max-width: 50%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+@media only screen and (max-device-width: 480px) {
+    .quotes div:nth-child(2){
+        width: 100%;
+        margin-left: 0;
+    }
+    .quotes div p:first-child{
+        font-size: 2rem;
+    }
+    .quotes div {
+        width: 100%;
+    }
+    .storyBox {
+        flex-direction: column;
+    }
+    .storyImage{
+      max-width: 100%;
+    }
+    .storyBox div {
+        width: 100%;
+    }
+  }

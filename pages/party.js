@@ -1,5 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar.jsx';
 
 export default function Party() {
-  return <h1>Wedding Party Page</h1>
+  return (
+    <div className='gray-page'>
+      <Navbar color='black' page='/party'/>
+      <h1>Insert Information HERE</h1>
+    </div>
+  )
 }

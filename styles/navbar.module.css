@@ -1,0 +1,44 @@
+.navbarButtonContainer button{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.navbarButtonContainer{
+    margin-left: 4%;
+    max-width: 30%;
+}
+
+.activeNavbarButton {
+    text-decoration: underline;
+}
+
+.rsvp{
+    border: none;
+    font-size: 1.5rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    margin-right: 4%;
+}
+
+.title{
+    font-size: 2.2rem;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    font-weight: 400;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .navbarButtonContainer {
+      display: none;
+    }
+    .rsvp{
+        display: none;
+    }
+    .title{
+        position: block;
+        left: 5%;
+        transform: none;
+        font-size: 1.8rem;
+    }
+  }

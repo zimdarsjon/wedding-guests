@@ -1,5 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar.jsx';
 
 export default function Registry() {
-  return <h1>Registry Page</h1>
+  return (
+    <div className='gray-page'>
+      <Navbar color='white' page='/registry'/>
+      <h1>Insert Information HERE</h1>
+    </div>
+  )
 }
