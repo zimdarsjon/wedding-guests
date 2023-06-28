@@ -209,4 +209,18 @@
     .storyBox div button{
         font-size: 1.5rem;
     }
+    .rsvpBox{
+        background-size: cover;
+        background-position: 39% 50%;
+    }
+    .rsvpBox h2{
+        font-size: 2rem;
+    }
+    .rsvpBox button{
+        font-size: 1rem;
+        width: 60%;
+    }
+    .rsvpBox p{
+        font-size: 1.5rem;
+    }
   }
