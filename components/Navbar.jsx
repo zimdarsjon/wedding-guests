@@ -6,6 +6,7 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
 import Menu from './navbar/Menu.jsx';
 import disableScroll from 'disable-scroll';
+import Link from 'next/link';
 
 const { useEffect, useState} = React;
 
@@ -28,13 +29,13 @@ export default function Navbar({ page, color }) {
     <>
     <div className='navbar' style={{color}}>
       <div className={styles.navbarButtonContainer}>
-        <Button color={color} page={page} pageLocation='/'>Our Story</Button>
+        <Button color={color} page={page} pageLocation='/story'>Our Story</Button>
         <Button color={color} page={page} pageLocation='/events'>Events</Button>
         <Button color={color} page={page} pageLocation='/party'>Wedding Party</Button>
         <Button color={color} page={page} pageLocation='/travel'>Travel & Stay</Button>
         <Button color={color} page={page} pageLocation='/registry'>Registry</Button>
       </div>
-      <h1 className={styles.title}>Frida and Steven</h1>
+      <h1 className={styles.title}><Link href='/' style={{textDecoration: 'none', color: color}}>Frida and Steven</Link></h1>
       <RSVP color={color}/>
       <button className={styles.dropButton} onClick={toggleMenu}>
         {expanded ? <CloseIcon fontSize='large'/> : <DehazeIcon fontSize='large'/>}
