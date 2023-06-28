@@ -1,7 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
+import { useTheme } from '@mui/material/styles';
 import { EB_Garamond } from 'next/font/google'
 import React from 'react';
+
+
+import { blueGrey, grey } from "@mui/material/colors";
+import { createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material";
+ 
+const appTheme = createTheme({
+  palette: {
+    primary: blueGrey,
+    secondary: {main : '#5f7153'},
+  },
+});
+
 
 import { useEffect } from 'react';
 
@@ -14,7 +28,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <main className={garamond.className}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={appTheme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </main>
   );
 }

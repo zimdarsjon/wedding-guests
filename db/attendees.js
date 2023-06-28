@@ -1,13 +1,21 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-mongoose.connect(process.env.ATLAS);
+mongoose.connect(process.env.MONGODB_URI);
 
 let attendeeSchema = mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    going: String,
-    additional: Number
+    name: String,
+    title: String,
+    partner: String,
+    partnerTitle: String,
+    plusOne: Boolean,
+    wisconsin: String,
+    thailand: String,
+    going: Number,
+    bringingGuest: Boolean,
+    goingPartner: String,
+    diet: String,
+    guestName: String
 })
 
 let Attendee = mongoose.model('Attendee', attendeeSchema);

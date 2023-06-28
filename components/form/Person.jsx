@@ -6,6 +6,10 @@ import Container from '@mui/material/Container';
 import axios from 'axios';
 import styles from '../../styles/form.module.css';
 
+import { red } from '@mui/material/colors';
+const color = red[500];
+
+
 const { useEffect, useState } = React;
 
 export default function Person({ person, setPerson, nextPage }) {
@@ -35,6 +39,9 @@ export default function Person({ person, setPerson, nextPage }) {
               partner: person.partner,
               plusOne: person.plusOne
             }
+            if (attendee.partner) {
+                attendee.label = `${person.name} and ${person.partner}`
+            }
             list.push(attendee)
           })
           setNames(list);
@@ -52,7 +59,7 @@ export default function Person({ person, setPerson, nextPage }) {
               <p>We look forward to seeing you.</p>
               <p>Please respond by April 30, 2024.</p>
             </div>
-            <Container sx={{ marginTop: '10%', color: 'white' }}>
+            <Container filled='true' sx={{ marginTop: '10%', color: 'white' }}>
                 <Autocomplete
                     className={styles.searchName}
                     filterOptions={(x) => x}
@@ -67,7 +74,7 @@ export default function Person({ person, setPerson, nextPage }) {
                     inputValue={inputValue}
                     onInputChange={handleChange}
                     getOptionDisabled={(option) => !option._id}
-                    renderInput={(params) => <TextField {...params} label="Guest" />}
+                    renderInput={(params) => <TextField color='primary' variant="filled" {...params} label="Guest" />}
                 />
             </Container>
         </Page>
