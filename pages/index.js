@@ -15,9 +15,9 @@ export default function App() {
       <div className={styles.date} >
         <Navbar color='white' page='/' />
         <div className={styles.dateText}>
-          <h2>We're Celebrating!</h2>
-          <h1>08 . 03 . 2024</h1>
-          <h2>Bangkok, Thailand</h2>
+          <h2 className={styles.secondaryHeader}>We're Celebrating!</h2>
+          <h1 className={styles.primaryHeader}>08 . 03 . 2024</h1>
+          <h2 className={styles.secondaryHeader}>Bangkok, Thailand</h2>
         </div>
       </div>
       <div className={styles.events}>
