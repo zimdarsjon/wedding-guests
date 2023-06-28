@@ -13,10 +13,21 @@ const { useEffect, useState} = React;
 export default function Navbar({ page, color }) {
 
   let [expanded, setExpanded] = useState(false);
+  let [style, setStyle] = useState({ color });
 
   useEffect(() => {
     disableScroll.off();
   }, [])
+
+  useEffect(() => {
+    if (expanded && color === 'black') {
+      setStyle({color, backgroundColor: 'white'})
+    } else if (expanded && color === 'white') {
+      setStyle({color: 'red', backgroundColor: 'black'})
+    } else {
+      setStyle({ color, backgroundColor: 'rgba(0, 0, 0, 0)' })
+    }
+  }, [expanded])
 
   let toggleMenu = (e) => {
     e.preventDefault();
@@ -27,7 +38,7 @@ export default function Navbar({ page, color }) {
 
   return (
     <>
-    <div className='navbar' style={{color}}>
+    <div className='navbar' style={style}>
       <div className={styles.navbarButtonContainer}>
         <Button color={color} page={page} pageLocation='/story'>Our Story</Button>
         <Button color={color} page={page} pageLocation='/events'>Events</Button>
@@ -38,7 +49,7 @@ export default function Navbar({ page, color }) {
       <h1 className={styles.title}><Link href='/' style={{textDecoration: 'none', color: color}}>Frida and Steven</Link></h1>
       <RSVP color={color}/>
       <button className={styles.dropButton} onClick={toggleMenu}>
-        {expanded ? <CloseIcon fontSize='large'/> : <DehazeIcon fontSize='large'/>}
+        {expanded ? <CloseIcon fontSize='large' style={{color}}/> : <DehazeIcon fontSize='large' style={{color}}/>}
       </button>
     </div>
     <Menu visible={expanded} color={color} page={page}/>
