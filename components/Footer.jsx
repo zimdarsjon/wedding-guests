@@ -13,7 +13,7 @@ export default function Footer(){
             <p><Link style={{color: 'black'}} href='/registry'>Registry</Link></p>
             <p><Link style={{color: 'black'}} href='rsvp'>RSVP</Link></p>
           </div>
-          <p><a style={{color: 'black'}} href='mailto: zimdarsj@gmail.com'>Email Us</a></p>
+          <p><a style={{color: 'black'}} href='mailto: wedding@thedomitrzes.com'>Email Us</a></p>
         </div>
     )
 }
