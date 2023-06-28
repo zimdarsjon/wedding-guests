@@ -4,9 +4,10 @@
   "description": "Application to keep track of who is attending a wedding along with the number of guests",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "dev": "webpack serve --open"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "etl": "node ./db/loader.js"
   },
   "keywords": [],
   "author": "",
@@ -15,13 +16,32 @@
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.6",
+    "axios": "^1.4.0",
     "babel-loader": "^9.1.2",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5",
     "css-loader": "^6.8.1",
+    "csv-parse": "^5.4.0",
+    "disable-scroll": "^0.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
+    "next": "^13.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }

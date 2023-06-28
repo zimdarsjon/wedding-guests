@@ -1,0 +1,101 @@
+.formContainer{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 92%;
+    height: 90vh;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 5vh;
+    background-position: center;
+}
+
+.searchName{
+    width: 25%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formPage{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1{
+    font-size: 6rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
+
+.changePage {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.acceptNames {
+    font-size: 3rem;
+    min-width: 20%;
+    color: #5f7153;
+}
+
+.acceptNames p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acceptNames div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acceptButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.acceptButtons button{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.changePage:hover {
+    background-color: rgba(1, 1, 1, 0.1);
+}
+
+.acceptButtons button:hover{
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+
+.detailsBox h2{
+  margin-top: 30px;
+}
+
+.detailArrows{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.detailsBox {
+    color: #5f7153;
+}
+
+.events p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
