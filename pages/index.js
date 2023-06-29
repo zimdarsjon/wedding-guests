@@ -45,14 +45,14 @@ export default function App() {
         <hr/>
         <div>
           <h2>See how it all started</h2>
-          <button><Link href='/story' style={{textDecoration: 'none', color: 'white'}}>Our Story</Link></button>
+          <Link className={styles.linkStoryButton} href='/story' style={{textDecoration: 'none', color: 'white'}}><button>Our Story</button></Link>
         </div>
         <hr />
       </div>
       <div className={styles.rsvpBox}>
         <p>Join Us</p>
         <h2>We hope you can make it!</h2>
-        <button><Link href='/rsvp' style={{textDecoration: 'none', color: 'black'}}>RSVP</Link></button>
+        <Link className={styles.linkRSVPButton} href='/rsvp' style={{textDecoration: 'none', color: 'black'}}><button>RSVP</button></Link>
       </div>
       <Footer />
     </div>

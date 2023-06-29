@@ -115,9 +115,13 @@
     font-size: 1rem;
     background-color: black;
     color: white;
-    width: 60%;
+    width: 100%;
     height: 80px;
     border: none;
+}
+
+.linkStoryButton{
+    width: 60%;
 }
 
 .storyBox div button:hover{
@@ -157,13 +161,17 @@
 
 .rsvpBox button{
     border: none;
-    width: 15%;
+    width: 100%;
     height: 75px;
     font-size: 1.5rem;
 }
 
 .rsvpBox button:hover{
     opacity: 0.9;
+}
+
+.linkRSVPButton{
+    width: 15%;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -174,7 +182,7 @@
         display: none;
     }
     .events{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .events div{
         width: 100%;
@@ -216,8 +224,10 @@
     .rsvpBox h2{
         font-size: 2rem;
     }
-    .rsvpBox button{
+    .linkRSVPButton button{
         font-size: 1rem;
+    }
+    .linkRSVPButton{
         width: 60%;
     }
     .rsvpBox p{
