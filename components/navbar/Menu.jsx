@@ -9,7 +9,6 @@ export default function Menu({ page, color, visible }) {
             {visible && <div className={styles.mobileNav}>
                 <div className={styles.mobileButtonBox}>
                     <Button color='black' page={page} pageLocation='/story'>Our Story</Button>
-                    <Button color='black' page={page} pageLocation='/events'>Events</Button>
                     <Button color='black' page={page} pageLocation='/party'>Wedding Party</Button>
                     <Button color='black' page={page} pageLocation='/travel'>Travel & Stay</Button>
                     <Button color='black' page={page} pageLocation='/registry'>Registry</Button>
