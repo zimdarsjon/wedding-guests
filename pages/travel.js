@@ -8,7 +8,7 @@ export default function Travel() {
   return (
     <div className='gray-page'>
       <div className={styles.imageBack}>
-        <Navbar color='white' page='/registry' />
+        <Navbar color='white' page='/travel' />
         <div className={styles.messageBox}>
           <h1>Travel & Stay</h1>
           <h2>Most events will be taking place nearby.</h2>
