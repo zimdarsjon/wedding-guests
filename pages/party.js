@@ -6,6 +6,7 @@ import jacob from '../public/profiles/Jakob_Square.jpg';
 import jens from '../public/profiles/Jens_Square.jpg';
 import kelsey from '../public/profiles/Kelsey_Square.jpg';
 import mackenzie from '../public/profiles/Mackenzie_Square.jpg';
+import Footer from '../components/Footer.jsx';
 
 export default function Party() {
   return (
@@ -48,6 +49,9 @@ export default function Party() {
           <h2>Bridesmaid</h2>
           <p>Mackenzie and Frida lived on the same street in high school. This meant a lot of late nights playing board games</p>
         </div>
+      </div>
+      <div className={styles.footerContainer}>
+        <Footer />
       </div>
     </div>
   )
