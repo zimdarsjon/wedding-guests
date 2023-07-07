@@ -34,34 +34,27 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    align-items: center;
 }
 
 .bangkok{
-  width: 100%;
+  width: 70%;
   height: auto;
   background-color: rgb(22, 21, 21);
   background-blend-mode: multiply;
   filter: brightness(80%);
 }
 
-.villa{
-    width: 100%;
-    height: auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%) brightness(80%);
-  }
-
-.events div{
-    width: 40%
-}
-
-.events div div {
-    width: 100%;
+.bangkokContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textBlock{
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     margin: 150px auto 200px auto;

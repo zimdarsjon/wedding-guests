@@ -21,38 +21,29 @@ export default function App() {
         </div>
       </div>
       <div className={styles.events}>
-        <div>
+        <div className={styles.bangkokContainer}>
           <Image src={bangkok} alt="bangkok" className={styles.bangkok} />
-          <div className={styles.textBlock}>
-            <h2>Wedding</h2>
-            <p>Chakrabongse Villas</p>
-            <p>396 Maharaja Road</p>
-            <p>Tatien, Bangkok 10200</p>
-            <p className={styles.map}><a href={mapLink} target="_blank">Map</a></p>
-          </div>
         </div>
-        <div>
-          <div className={styles.textBlock}>
-            <h2>Send Off Party</h2>
-            <p>Cheese Factory</p>
-            <p>420 Cottage Ln</p>
-            <p>Dairy, Wisconin 42069</p>
-          </div>
-          <Image src={villa} alt="villa" className={styles.villa} />
+        <div className={styles.textBlock}>
+          <h2>Wedding</h2>
+          <p>Chakrabongse Villas</p>
+          <p>396 Maharaja Road</p>
+          <p>Tatien, Bangkok 10200</p>
+          <p className={styles.map}><a href={mapLink} target="_blank">Map</a></p>
         </div>
       </div>
       <div className={styles.storyBox}>
-        <hr/>
+        <hr />
         <div>
           <h2>See how it all started</h2>
-          <Link className={styles.linkStoryButton} href='/story' style={{textDecoration: 'none', color: 'white'}}><button>Our Story</button></Link>
+          <Link className={styles.linkStoryButton} href='/story' style={{ textDecoration: 'none', color: 'white' }}><button>Our Story</button></Link>
         </div>
         <hr />
       </div>
       <div className={styles.rsvpBox}>
         <p>Join Us</p>
         <h2>We hope you can make it!</h2>
-        <Link className={styles.linkRSVPButton} href='/rsvp' style={{textDecoration: 'none', color: 'black'}}><button>RSVP</button></Link>
+        <Link className={styles.linkRSVPButton} href='/rsvp' style={{ textDecoration: 'none', color: 'black' }}><button>RSVP</button></Link>
       </div>
       <Footer />
     </div>
