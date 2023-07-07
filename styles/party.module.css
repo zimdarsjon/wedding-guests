@@ -17,16 +17,16 @@
 }
 
 .party div h1{
-    font-size: 36px;
+    font-size: 24px;
     margin-top: 10px;
 }
 
 .party div h2{
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .profilePic{
-    width: 80%;
+    width: 60%;
     height: auto;
 }
 
