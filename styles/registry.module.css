@@ -1,0 +1,38 @@
+.imageBack{
+    background-image: url('../public/stepkiss.jpg');
+    background-color: rgb(110, 110, 110);
+    background-size: 100%;
+    height: 100vh;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: white;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    max-height: 75vh;
+}
+
+.footerContainer{
+    width: 100%;
+    background-color: #dfe0e1;
+    height: 25vh;
+}
+
+.messageBox{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .imageBack{
+        background-size: cover;
+        background-position: 45% 50%;
+    }
+    .messageBox{
+        width: 90%;
+    }
+}
