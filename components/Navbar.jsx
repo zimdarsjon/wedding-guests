@@ -40,7 +40,6 @@ export default function Navbar({ page, color }) {
     <>
     <div className='navbar' style={style}>
       <div className={styles.navbarButtonContainer}>
-        <Button color={color} page={page} pageLocation='/story'>Our Story</Button>
         <Button color={color} page={page} pageLocation='/party'>Wedding Party</Button>
         <Button color={color} page={page} pageLocation='/travel'>Travel & Stay</Button>
         <Button color={color} page={page} pageLocation='/registry'>Registry</Button>

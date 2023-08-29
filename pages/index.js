@@ -36,7 +36,6 @@ export default function App() {
         <hr />
         <div>
           <h2>See how it all started</h2>
-          <Link className={styles.linkStoryButton} href='/story' style={{ textDecoration: 'none', color: 'white' }}><button>Our Story</button></Link>
         </div>
         <hr />
       </div>
