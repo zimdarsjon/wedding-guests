@@ -57,9 +57,10 @@ export default function Person({ person, setPerson, nextPage }) {
             <div className={styles.text}>
               <h1>RSVP</h1>
               <p>We look forward to seeing you.</p>
-              <p>Please respond by April 30, 2024.</p>
+              <p>Official wedding invitations will go out later this year</p>
+              {/* <p>Please respond by April 30, 2024.</p> */}
             </div>
-            <Container filled='true' sx={{ marginTop: '10%', color: 'white' }}>
+            {/* <Container filled='true' sx={{ marginTop: '10%', color: 'white' }}>
                 <Autocomplete
                     className={styles.searchName}
                     filterOptions={(x) => x}
@@ -76,7 +77,7 @@ export default function Person({ person, setPerson, nextPage }) {
                     getOptionDisabled={(option) => !option._id}
                     renderInput={(params) => <TextField color='primary' variant="filled" {...params} label="Guest" />}
                 />
-            </Container>
+            </Container> */}
         </Page>
     )
 }

@@ -6,6 +6,8 @@ import jacob from '../public/profiles/Jakob_Square.jpg';
 import jens from '../public/profiles/Jens_Square.jpg';
 import kelsey from '../public/profiles/Kelsey_Square.jpg';
 import mackenzie from '../public/profiles/Mackenzie_Square.jpg';
+import mandy from '../public/profiles/mandy_square.jpg';
+import olivia from '../public/profiles/olivia_square.jpg';
 import Footer from '../components/Footer.jsx';
 
 export default function Party() {
@@ -34,11 +36,13 @@ export default function Party() {
       </div>
       <div className={styles.party}>
         <div>
+        <Image src={mandy} className={styles.profilePic}/>
           <h1>Mandy Przybyla</h1>
           <h2>Bridesmaid</h2>
           <p></p>
         </div>
         <div>
+        <Image src={olivia} className={styles.profilePic}/>
           <h1>Olivia Scott</h1>
           <h2>Bridesmaid</h2>
           <p></p>
