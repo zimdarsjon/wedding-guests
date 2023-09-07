@@ -40,12 +40,12 @@ export default function Navbar({ page, color }) {
     <>
     <div className='navbar' style={style}>
       <div className={styles.navbarButtonContainer}>
-        <Button color={color} page={page} pageLocation='/party'>Wedding Party</Button>
+        {/* <Button color={color} page={page} pageLocation='/party'>Wedding Party</Button> */}
         <Button color={color} page={page} pageLocation='/travel'>Travel & Stay</Button>
         <Button color={color} page={page} pageLocation='/registry'>Registry</Button>
       </div>
       <h1 className={styles.title}><Link href='/' style={{textDecoration: 'none', color: color}}>Frida and Steven</Link></h1>
-      <RSVP color={color}/>
+      {/* <RSVP color={color}/> */}
       <button className={styles.dropButton} onClick={toggleMenu}>
         {expanded ? <CloseIcon fontSize='large' style={{color}}/> : <DehazeIcon fontSize='large' style={{color}}/>}
       </button>
