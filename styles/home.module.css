@@ -1,8 +1,8 @@
 .date{
     background-image: url('../public/sitting.jpg');
     background-color: rgb(187, 187, 187);
-    background-size: 100%;
-    height: 100vh;
+    background-size: cover;
+    min-height: 100vh;
     background-position: center;
     background-blend-mode: multiply;
     color: white;
@@ -93,7 +93,7 @@
 }
 
 .storyBox hr{
-    width: 20%;
+    width: 90%;
     border-top: 2px solid black;
     background-color: black;
 }
@@ -129,8 +129,7 @@
 .rsvpBox{
     background-image: url('../public/rsvp.jpg');
     background-color: rgb(187, 187, 187);
-    background-size: 100%;
-    height: 80vh;
+    background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
     color: white;
@@ -140,12 +139,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 70vh;
 }
 
 .rsvpBox h2{
     font-size: 5rem;
     margin-top: 20px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .rsvpBox p{

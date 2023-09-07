@@ -22,7 +22,7 @@ export default function App() {
       </div>
       <div className={styles.events}>
         <div className={styles.bangkokContainer}>
-          <Image src={bangkok} alt="bangkok" className={styles.bangkok} />
+          <Image src={villa} alt="villa" className={styles.bangkok} />
         </div>
         <div className={styles.textBlock}>
           <h2>Wedding</h2>
@@ -34,15 +34,11 @@ export default function App() {
       </div>
       <div className={styles.storyBox}>
         <hr />
-        <div>
-          <h2>See how it all started</h2>
-        </div>
-        <hr />
       </div>
       <div className={styles.rsvpBox}>
         <p>Join Us</p>
         <h2>We hope you can make it!</h2>
-        <Link className={styles.linkRSVPButton} href='/rsvp' style={{ textDecoration: 'none', color: 'black' }}><button>RSVP</button></Link>
+        {/* <Link className={styles.linkRSVPButton} href='/rsvp' style={{ textDecoration: 'none', color: 'black' }}><button>RSVP</button></Link> */}
       </div>
       <Footer />
     </div>
