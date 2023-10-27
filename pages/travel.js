@@ -19,14 +19,14 @@ export default function Travel() {
         <div className={styles.locations}>
           <div className={styles.location}>
             <h2>Aurum The River Place</h2>
-            <p>392/29 Maharaj Road, Pranakorn, Bangkok, Thailand 10200 </p>
-            <p>2 minute walk to Chakrabongse Villas</p>
+            <p>394/27-29 Soi Pansook, Maharaj Road, Pranakorn, Bangkok, Thailand 10200</p>
+            <p>Directly neighboring Chakrabongse Villas</p>
             <Link target="_blank" href='https://www.booking.com/hotel/th/aurum-the-river-place.html'><button>View Listings</button></Link>
           </div>
           <div className={styles.location}>
             <h2>The Royal ThaTien Village, Bangkok</h2>
-            <p>394/27-29 Soi Pansook, Maharaj Road, Pranakorn, Bangkok, Thailand 10200</p>
-            <p>Directly neighboring Chakrabongse Villas</p>
+            <p>392/29 Maharaj Road, Pranakorn, Bangkok, Thailand 10200 </p>
+            <p>2 minute walk to Chakrabongse Villas</p>
             <Link target="_blank" href='https://www.booking.com/hotel/th/the-royal-thatien-village.html'><button>View Listings</button></Link>
           </div>
           <div className={styles.location}>
